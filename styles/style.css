@@ -155,6 +155,10 @@ body{
 
 /* End of the main section  */
 
+/*------------------------------------------
+Start footer section 
+----------------------------------------- */
+
 .footer-container{
     background-color: black;
     width: 100%;
@@ -188,4 +192,84 @@ body{
 }
 
 
-/* Footer section start  */
+/* Footer section End  */
+
+
+/*----------------
+ Media queries 
+----------------*/
+
+/* For Mobiles */
+
+@media screen and (max-width: 668px){
+    .header-elements{
+        display: block;
+
+    }
+    .header-title{
+        color: white;
+        font-size: 22px;
+        line-height: normal;
+    }
+    .header-texts{
+        color: white;
+        font-size: 14px;
+        line-height: normal;
+    }
+
+    .main-conatainer {
+        display: flex;
+        flex-direction: column;
+    }
+    .box{
+        background-color: white;
+        margin-left: 0px;
+    }
+
+    .blogs {
+        display: flex;
+        flex-direction: column;
+    }
+    .main-conatainer{
+        align-items: center;
+    }
+    .nav-buttons{
+        justify-items: center;
+        padding-top: 0px;
+        margin-top: -15px;
+    }
+    .nav-items ul{
+        flex-direction: column;
+        margin-left: -38px;
+    }
+}
+
+/* Mobiles End  */
+
+/* Tablet Devices */
+
+@media only screen and (min-width: 688px) and (max-width: 992px){
+    .main-conatainer{
+        flex-direction: column;
+    }
+    .nav-buttons{
+        display: flex;
+    
+    }
+    .box {
+        background-color: white; 
+        height: 160px;
+        margin-top: -81px;
+    }
+    .nav-button{
+        margin-right: 50px;
+    }
+    .blogs{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .banner-img {
+        padding-top: 440px;
+        width: 100%;
+        display: block;
+    }
+}
