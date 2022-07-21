@@ -8,6 +8,20 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
+/*------------ animation ------------*/
+@keyframes positiony {
+    0%{
+        left: 0;
+    }
+    50%{
+        left: 50px;
+    }
+    100%{
+        left: 0;
+    }
+}
+
+
 .button {
     border: none;
     color: white;
@@ -69,6 +83,9 @@ body{
 .banner-img{
     width:100%;
     display: block; 
+    vertical-align: middle;
+    position: relative;
+    animation: positiony 8s infinite;
 }
 
 /* End of the header sectio */
@@ -87,7 +104,7 @@ body{
     font-size: 20px;
 }
 
-.active, .nav-button:hover {
+.active, .nav-button:hover{
     background-color: #4CAF50;
     color: white;
 }
@@ -153,6 +170,10 @@ body{
 }
 
 
+.dispaly{
+    display: none;
+}
+
 /* End of the main section  */
 
 /*------------------------------------------
@@ -215,6 +236,9 @@ Start footer section
         color: white;
         font-size: 14px;
         line-height: normal;
+        white-space: nowrap;
+        overflow-x: hidden;
+        text-overflow: ellipsis;
     }
 
     .main-conatainer {
@@ -273,5 +297,10 @@ Start footer section
         display: block;
     }
 
+    .dispaly{
+        display: block;
+        width: 200px;
+        margin: 0 auto;
+    }
     
 }
